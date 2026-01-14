@@ -16,5 +16,5 @@ struct Answer: Identifiable {
 struct Question {
     var id = UUID()
     var correctAnswer: Answer
-    var otherAnswers: [Answer]
+    var incorrectAnswers: [Answer]
 }

@@ -18,7 +18,7 @@ struct QuestionView: View {
                 Text("1 out of 3")
                     .padding()
             }
-            ProgressBar(progress: 78)
+            ProgressBar(progress: 67)
             VStack(spacing: 10) {
                 Text("Which country's flag is this?")
                     .font(.title)
