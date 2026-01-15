@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-@Observable
+@Observable 
 class GameManager {
     var questions = [Question]()
     private(set) var index = 0
