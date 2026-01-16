@@ -28,6 +28,11 @@ struct Data {
         "Spain",
         "Sweden",
         "Ukraine",
-        "United States"
+        "United States",
+        "Australia.svg",
+        "Bahamas.svg",
+        "Barbados.svg",
+        "Brazil.svg",
+        "Cambodia.svg"
     ]
 }
