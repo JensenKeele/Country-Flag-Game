@@ -39,7 +39,16 @@ class GameManager {
             questions.removeAll()
             for country in countries {
                 if UIImage(named: country) != nil {
-                    
+                    var incorrectAnswers = [String]()
+                    while incorrectAnswers.count < 3 {
+                        if let randomCountry = countries.randomElement(), randomCountry != country, !incorrectAnswers.contains(randomCountry) {
+                            incorrectAnswers.append(randomCountry)
+                        }
+                    }
+                    questions.append(Question(correctAnswer: Answer(text: country, isCorrect: true), incorrectAnswers: [
+                        Answer(text: incorrectAnswers[0], isCorrect: false),
+                        Answer(text: incorrectAnswers[1], isCorrect: false),
+                        Answer(text: incorrectAnswers[2], isCorrect: false)]))
                 }
                 else {
                     print("\(country) image can not be found")

@@ -25,6 +25,9 @@ struct QuestionView: View {
                     Text("Which country's flag is this?")
                         .font(.title)
                     Image(gameManager.country)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
                     ForEach(gameManager.answerChoices) { answer in
                         AnswerRow(answer: answer)
                     }
