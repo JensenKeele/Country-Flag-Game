@@ -27,7 +27,7 @@ struct QuestionView: View {
                     Image(gameManager.country)
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 200)
+                        .frame(width: 400, height: 200)
                     ForEach(gameManager.answerChoices) { answer in
                         AnswerRow(answer: answer)
                     }
